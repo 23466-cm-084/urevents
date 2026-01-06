@@ -1,0 +1,33 @@
+BACKEND:
+   Backend is a server-side program that handles requests, applies logic, and manages data using a database.
+ 
+🏠 House example
+
+Frontend = Doorbell
+Backend = Owner
+Database = Cupboard
+
+You don’t open cupboard directly.
+You ring bell → owner decides → gives item.
+
+WHY frontend should NOT talk to database directly
+
+This is VERY important 👇
+
+❌ If frontend connects directly:
+
+Anyone can see DB details
+Anyone can steal / delete data
+Zero security
+
+✅ Backend acts as gatekeeper
+
+Hides database
+Controls access
+Applies rules
+
+👉 Backend = security + control
+
+
+🔥 What is an API?
+	API (Application Programming Interface) is a set of rules that allows one program (frontend) to request data or actions from another program (backend).
